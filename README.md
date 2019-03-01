@@ -53,7 +53,9 @@ A closure is a collection of all the variables in the scope at the time of creat
     The properties and methods are added to that object by again using ${this). The new object referenced is then returned at the end implicitly.
 
 4.4. Explicit Binding. Forcing a function to call a particular object by using ${this.object}, 
-    which explicitly tells a function which object to use for the function we are performing 
+    which explicitly tells a function which object to use for the function we are performing.
+
+    <!-- .call .bind .apply, methods you specifically bind with.-->
 
 
 5. Why do we need super() in an extended class?

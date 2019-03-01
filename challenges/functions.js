@@ -46,8 +46,10 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // ---------------------------------------------------------------------------------------------
 // ==== Closures ==== 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-// Explanation: `nestedFunction()` can access the variable `internal` because it is a method within the scope of the parent function myFunction().
+// Explanation: `nestedFunction()` can access the variable `internal` because it is a function within the scope of the parent function myFunction().
 
+// methods are only on objects.
+// Closures  are functions reaching out to outer functions variables.
 
 const external = "I'm outside the function";
 
@@ -61,3 +63,4 @@ function myFunction() {
   nestedFunction();
 }
 myFunction();
+
