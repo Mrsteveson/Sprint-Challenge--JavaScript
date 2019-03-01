@@ -104,7 +104,7 @@ console.log(contactInfo);
 // COME BACK TO THIS ONE!!! ITS JUST LOGGING AN EMPTY ARRAY ON CODEPEN AND MY DEVELOPER TOOLS CONSOLE IS BEING AN IDIOT.
 const uni = [];
 for (let i = 0; i < graduates.length; i++) {
-  if (graduates[i].university === "Uni") {
+  if (graduates[i].university.includes("Uni")) {
     uni.push(graduates[i].university)
   }
 }
