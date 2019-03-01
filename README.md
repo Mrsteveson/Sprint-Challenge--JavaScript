@@ -30,13 +30,37 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach executes a provided function once for each array element. Meanwhile, .map creates a new array with the results of calling a provided function on every element in the array that is being called.
+
+
 2. What is the difference between a function and a method?
+
+In javascript, a function is an object, that is comprised of of various properties and their values, if the value of one of those properties is a function than that value is what we call a method. The function being described can be considered the parent container of the specific piece of code, while the method is a function within that parent function.
+
 
 3. What is closure?
 
+A closure is a collection of all the variables in the scope at the time of creation of the function. You use closers any time you have a nested function, and a variable only becomes a closure if it is used within that function. The variable is what is in the closure and the function scope itself is the closure.
+
+
 4. Describe the four rules of the 'this' keyword.
 
+4.1. Window Binding. The most common case of function, that calls the standalone function.
+
+4.2. Implicit Binding. The object that comes before the .notation is what is bound in this scenario, so our function calls that object implicitly. 
+
+4.3. New Binding. The new operator uses ${this} to create and reference a new object which inherits the prototype of the function we are using.
+    The properties and methods are added to that object by again using ${this). The new object referenced is then returned at the end implicitly.
+
+4.4. Explicit Binding. Forcing a function to call a particular object by using ${this.object}, 
+    which explicitly tells a function which object to use for the function we are performing 
+
+
 5. Why do we need super() in an extended class?
+
+Super() allows us to setup access to the methods and attributes that we want from the parent to the child. The super keyword is used as a function which calls the parent class and applies its parameters onto the child function.
+
+
 
 ## Project Set up
 

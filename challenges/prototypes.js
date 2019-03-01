@@ -26,6 +26,29 @@
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
 
+// Original Function
+function CuboidMaker(params) {
+  this.length = params.length;
+  this.width = params.width;
+  this.height = params.height;
+}
+
+CuboidMaker.prototype.volume = function() {
+  return `The volume of a cuboid is ${this.length} * ${this.width} * $${this.height}.`;
+}
+
+CuboidMaker.prototype.surfaceArea = function() {
+  return `The surface area of a cuboid is 2 * ${this.length} * ${this.width} + ${this.length} * ${this.height} + ${this.width} * ${this.height}.`;
+}
+
+// Cuboid Object
+const cuboid = new CuboidMaker({
+  length: 4,
+  width: 5,
+  height: 5,
+});
+
+
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 // console.log(cuboid.volume()); // 100
 // console.log(cuboid.surfaceArea()); // 130
