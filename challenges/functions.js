@@ -7,13 +7,11 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // consume(2,2,add); // 4
@@ -21,10 +19,45 @@
 // consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
+// My Function
+function consume(param1, param2, cb) {
+
+
+
+  function add(x, y, cb) {
+    return cb(x + y);
+  }
+
+  add(items, function(add) {
+    console.log(add)
+  });
+
+  function multiply(x, y, cb) {
+    return cb(x * y);
+  }
+
+  multiply(items, function(multiply) {
+    console.log(multiply)
+  });
+
+  function greeting(first_name, last_name, cb) {
+    return cb(`Hello ${first_name} ${last_name}, nice to meet you!`);
+  }
+
+  greeting(items, function(greeting) {
+    console.log(greeting);
+  });
+}
+
+consume();
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+
+
+// ---------------------------------------------------------------------------------------------
 // ==== Closures ==== 
-
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-
 // Explanation: 
 
 
