@@ -21,37 +21,25 @@
 
 // My Function
 function consume(param1, param2, cb) {
-
-
-
-  function add(x, y, cb) {
-    return cb(x + y);
-  }
-
-  add(items, function(add) {
-    console.log(add)
-  });
-
-  function multiply(x, y, cb) {
-    return cb(x * y);
-  }
-
-  multiply(items, function(multiply) {
-    console.log(multiply)
-  });
-
-  function greeting(first_name, last_name, cb) {
-    return cb(`Hello ${first_name} ${last_name}, nice to meet you!`);
-  }
-
-  greeting(items, function(greeting) {
-    console.log(greeting);
-  });
+  console.log(cb(param1, param2));
 }
 
-consume();
+function add(x, y) {
+  return x + y;
+}
+
 consume(2,2,add); // 4
+
+function multiply(x, y) {
+  return x * y;
+}
+
 consume(10,16,multiply); // 160
+
+function greeting(first_name, last_name) {
+  return `Hello ${first_name} ${last_name}, nice to meet you!`;
+}
+
 consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
